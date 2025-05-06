@@ -1,48 +1,190 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - YouSeaCommunity</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Solusi Digital & IoT untuk Industri | Youth Social Education Awareness</title>
+    <meta name="description" content="PT Tentakel Integrasi Indonesia menyediakan solusi software, sistem IoT, dan otomasi industri untuk efisiensi dan transformasi digital." />
+    <meta name="keywords" content="solusi digital, IoT Indonesia, software house, otomatisasi industri, smart locker, validator machine" />
+    <meta name="author" content="PT Tentakel Integrasi Indonesia" />
+
+    <!-- Open Graph Meta (untuk share di Facebook, WhatsApp) -->
+    <meta property="og:title" content="PT Tentakel Integrasi Indonesia - Solusi Digital & IoT untuk Industri" />
+    <meta property="og:description" content="Solusi software dan sistem IoT untuk kebutuhan manufaktur dan industri." />
+    <meta property="og:image" content="~/img/OK/logo_onlysimbol-removebg-preview.png" />
+    <meta property="og:url" content="https://www.tentakelintegrasi.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PT Tentakel Integrasi Indonesia" />
+    <meta name="twitter:description" content="Solusi software, IoT, dan otomasi industri." />
+    <meta name="twitter:image" content="~/img/OK/logo_onlysimbol-removebg-preview.png" />
+
+    <link rel="canonical" href="https://www.tentakelintegrasi.com/" />
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/fontawesome-all.css" rel="stylesheet">
+    <link href="~/css/swiper.css" rel="stylesheet">
+    <link href="~/css/magnific-popup.css" rel="stylesheet">
+    <link href="~/css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="~/img/OK/logo_onlysimbol-removebg-preview.png">
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Organization",
+          "name": "PT Tentakel Integrasi Indonesia",
+          "url": "https://www.tentakelintegrasi.com/",
+          "logo": "https://www.tentakelintegrasi.com/img/OK/logo_onlysimbol-removebg-preview.png",
+          "description": "Penyedia solusi digital, sistem IoT, dan pengembangan perangkat lunak untuk industri di Indonesia.",
+          "contactPoint": {
+            "@@type": "ContactPoint",
+            "telephone": "+62 816-1723-3847",
+            "contactType": "Customer Service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian", "English"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/tentakelintegrasi",
+            "https://www.instagram.com/tentakelintegrasi"
+          ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@@type": "ListItem",
+              "position": 1,
+              "name": "Beranda",
+              "item": "https://www.tentakelintegrasi.com/"
+            },
+            {
+              "@@type": "ListItem",
+              "position": 2,
+              "name": "Produk",
+              "item": "https://www.tentakelintegrasi.com/#produk"
+            }
+          ]
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">YouSeaCommunity</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - YouSeaCommunity - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    </div>
+    <!-- end of preloader -->
+
+
+    <main>
+        @RenderBody()
+    </main>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>🌊 YouSea</h4>
+                        <p>
+                            Youth Social Education Awareness
+                            Education. Dedication. Empowerment.
+                        </p>
+
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        📧 Email: contact@yousea.org
+                        <br />
+                        📱 Instagram: @@yousea.id
+                        <br />
+                        🌐 Website: www.yousea.org
+                        <br />
+                        📍 Lokasi: Jakarta, Indonesia
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <p>
+                            Kami percaya bahwa transformasi digital bukan hanya tentang perangkat, tetapi juga tentang membentuk cara kerja baru yang lebih cerdas dan terukur. Karena itu, kami tidak hanya menciptakan sistem, tetapi juga menjadi mitra strategis bagi klien dalam perjalanan digital mereka.
+                        </p>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">
+                        Copyright © PT. Tentakel Integrasi Indonesia since 2020
+                    </p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="~/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="~/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="~/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="~/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="~/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="~/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js"></script> <!-- Custom scripts -->
+
+
 </body>
 </html>
